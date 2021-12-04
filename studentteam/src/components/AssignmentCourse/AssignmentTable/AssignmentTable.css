@@ -1,0 +1,59 @@
+.at-content {
+  margin-top: 30px;
+  width: 90%;
+  display: flex;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.at-content:hover {
+  box-shadow: 1px 0px 15px rgba(0, 0, 0, 0.13);
+}
+.at-content .at-container {
+  display: flex;
+}
+
+.at-content .at-content-l img {
+  width: 50px;
+  height: 50px;
+}
+
+.at-content .at-content-r {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+
+.at-content .at-content-rb {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.at-content .at-content-rb-first {
+  display: flex;
+}
+
+.at-content .at-content-rb .at-content-rb-first h5:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 7px;
+  left: -7px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.at-content .at-content-rb .at-content-rb-first h5:not(:first-child) {
+  position: relative;
+  margin-left: 10px;
+  color: red;
+}
+
+.at-content .at-content-r .at-content-rb-last {
+  color: red;
+}

@@ -1,0 +1,126 @@
+.a-container {
+  display: flex;
+  flex-direction: row;
+  z-index: -1;
+}
+
+.a-container .a-message {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* z-index: -3; */
+}
+
+.a-container .a-message .message {
+  width: 300px;
+  height: 20%;
+  background-color: white;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: -1px -0px 15px rgba(0, 0, 0, 0.13);
+  z-index: 2;
+}
+
+.a-container .a-message .message .close {
+  width: 300px;
+  height: 20%;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 3px;
+  align-items: center;
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+.a-container .a-message .message .close span {
+  cursor: pointer;
+}
+
+.a-container .a-message .message .message-button {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  background-color: #f5f5f5dc;
+  padding-right: 20px;
+}
+
+.a-container .a-message .message .message-button button {
+  border-color: rgb(38, 38, 255);
+  width: 80px;
+  height: 21px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.a-content {
+  margin: 40px;
+  width: 50%;
+}
+
+.a-content-top {
+  width: fit-content;
+  color: #6264a7;
+  font-size: 17px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.a-content-top:hover {
+  color: #5f62af;
+}
+
+.a-content-middle {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  height: 40%;
+}
+
+.a-content-mt {
+  margin-bottom: 20px;
+}
+
+.a-content-mt h5 {
+  font-size: 20px;
+}
+
+.a-content-mt p {
+  color: rgb(155, 151, 151);
+  font-size: 15px;
+}
+
+.a-content-md {
+  height: 50%;
+}
+
+.a-content-md h5 {
+  color: rgb(151, 148, 148);
+  font-size: 12px;
+}
+
+.a-content-md textarea {
+  overflow: scroll;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.a-content-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.a-content-bottom button {
+  border-radius: 5px;
+  width: 70px;
+  height: 30px;
+  background-color: rgb(46, 189, 46);
+}
