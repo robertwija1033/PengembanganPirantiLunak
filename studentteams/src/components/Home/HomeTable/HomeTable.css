@@ -1,0 +1,39 @@
+.card-box {
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 190px;
+  height: 190px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 15px;
+  text-align: center;
+  box-shadow: -1px -0px 15px rgba(0, 0, 0, 0.13);
+  cursor: pointer;
+}
+
+.card-box:hover {
+  background-color: rgb(0, 0, 0, 0.04);
+  border: 1px solid rgba(128, 128, 128, 0.486);
+}
+
+.card-box img {
+  width: 50%;
+  height: 50%;
+}
+
+@media screen and (min-width: 425px) {
+  .card-box {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-box {
+    width: 300px;
+    height: 250px;
+  }
+}

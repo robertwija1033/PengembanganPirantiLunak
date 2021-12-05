@@ -1,0 +1,34 @@
+.navlink {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #f0f0f0;
+  width: 70px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  box-shadow: -1px -0px 15px rgba(0, 0, 0, 0.13);
+}
+
+.navlink .navlink-inside {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 20px;
+}
+
+.navlink .navlink-inside .link {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.navlink .navlink-inside .link h5 {
+  font-size: 11px;
+}

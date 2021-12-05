@@ -1,0 +1,87 @@
+.fileManager {
+  margin-top: 20px;
+}
+
+.fileManager p {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.fileManager__box {
+  border: 1px solid #ccc;
+}
+
+.fileManager__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.fileManager__header--icon {
+  display: flex;
+}
+
+.fileManager__header--icon > * + * {
+  margin-left: 8px;
+}
+
+.fileManager__header--icon div {
+  border: 2px solid #ccc;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.fileManager__header--icon svg {
+  font-size: 20px;
+}
+
+.fileManager__body {
+  border-top: 2px solid #ccc;
+  padding: 10px;
+  height: 150px;
+  max-height: 150px;
+}
+
+.fileManager__body div {
+  display: flex;
+  align-items: center;
+  margin-top: -13px;
+}
+
+.fileManager__body svg {
+  color: orange;
+  font-size: 22px;
+}
+
+.fileManager__body p {
+  transform: translateY(7px);
+  margin-left: 7px;
+}
+
+.fileManager__body div::before {
+  content: "";
+  width: 13px !important;
+  height: 12px;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-top: -10px;
+}
+
+.fileManager__button button {
+  border: 1px solid #ccc;
+  outline: none;
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.fileManager__button button:first-child {
+  background: darkblue;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.fileManager__button button:last-child {
+  background: transparent;
+}

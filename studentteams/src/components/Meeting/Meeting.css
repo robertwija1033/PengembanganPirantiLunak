@@ -1,0 +1,109 @@
+.meeting-container {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-areas:
+    "navbar navbar"
+    "content user";
+  grid-template-columns: 4fr 1.5fr;
+  grid-template-rows: 0.28fr 2.5fr;
+}
+
+.meeting-container.active {
+  grid-template-areas:
+    "navbar navbar"
+    "user user";
+}
+
+.meeting-navbar {
+  background-color: rgba(15, 13, 13, 0.85);
+  grid-area: navbar;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar-button {
+  height: 100%;
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.meeting-container .meeting-navbar .navbar-button .logo-icon,
+.openCamera {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-right: 10px;
+  color: white;
+  border-radius: 50%;
+}
+
+.meeting-container .meeting-navbar .navbar-button .logo-icon:hover,
+.openCamera:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.meeting-container .meeting-navbar .navbar-button .openCamera {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  padding: 6px;
+  color: white;
+  border-radius: 50%;
+}
+
+.meeting-container .meeting-navbar .navbar-button button {
+  background-color: rgba(225, 0, 70, 1);
+  border-radius: 5px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 30px;
+}
+
+.meeting-container .meeting-navbar .navbar-button button h5 {
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.meeting-content {
+  grid-area: content;
+  display: flex;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.meeting-content video {
+  object-fit: cover;
+  width: 100%;
+}
+
+.meeting-user {
+  background-color: rgba(26, 26, 26, 0.9);
+  grid-area: user;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.meeting-user img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: white;
+  margin-bottom: 50px;
+}
